@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ilammy/msvc-dev-cmd.git"
+    "url": "git+https://github.com/KDABLabs/msvc-dev-cmd-action.git"
   },
   "keywords": [
     "GitHub",
@@ -23,9 +23,9 @@
   "author": "ilammy <me@ilammy.net>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ilammy/msvc-dev-cmd/issues"
+    "url": "https://github.com/KDABLabs/msvc-dev-cmd-action/issues"
   },
-  "homepage": "https://github.com/ilammy/msvc-dev-cmd#readme",
+  "homepage": "https://github.com/KDABLabs/msvc-dev-cmd-action#readme",
   "dependencies": {
     "@actions/core": "^1.10.0"
   },
