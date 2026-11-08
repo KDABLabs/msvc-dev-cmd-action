@@ -120,7 +120,7 @@ function filterPathValue(path) {
     return paths.filter(unique).join(';')
 }
 
-/** See https://github.com/ilammy/msvc-dev-cmd#inputs */
+/** See https://github.com/KDABLabs/msvc-dev-cmd-action#inputs */
 function setupMSVCDevCmd(arch, sdk, toolset, uwp, spectre, vsversion) {
     if (process.platform != 'win32') {
         core.info('This is not a Windows virtual environment, bye!')
