@@ -5,6 +5,8 @@
 > [!NOTE]
 > This is a fork of [ilammy/msvc-dev-cmd](https://github.com/ilammy/msvc-dev-cmd),
 > which is no longer maintained.
+>
+> `@v1` points to the last upstream release (v1.13.0). Releases from this fork start at `@v2`.
 
 [GitHub Action](https://github.com/features/actions) for configuring Developer Command Prompt for Microsoft Visual C++.
 
@@ -21,7 +23,7 @@ jobs:
   test:
     steps:
       - uses: actions/checkout@v4
-      - uses: KDABLabs/msvc-dev-cmd-action@v1
+      - uses: KDABLabs/msvc-dev-cmd-action@v2
       - name: Build something requiring CL.EXE
         run: |
           cmake -G "NMake Makefiles" .
@@ -46,7 +48,7 @@ jobs:
           - amd64_arm64
     steps:
       - uses: actions/checkout@v4
-      - uses: KDABLabs/msvc-dev-cmd-action@v1
+      - uses: KDABLabs/msvc-dev-cmd-action@v2
         with:
           arch: ${{ matrix.arch }}
       - name: Build something requiring CL.EXE
@@ -105,21 +107,21 @@ jobs:
     steps:
       # ...
       - name: Configure build for amd64
-        uses: KDABLabs/msvc-dev-cmd-action@v1
+        uses: KDABLabs/msvc-dev-cmd-action@v2
         with:
           arch: amd64
 
       - run: build # (for amd64)
 
       - name: Configure build for x86
-        uses: KDABLabs/msvc-dev-cmd-action@v1
+        uses: KDABLabs/msvc-dev-cmd-action@v2
         with:
           arch: amd64_x86
 
       - run: build # (for x86)
 
       - name: Configure build for ARM64
-        uses: KDABLabs/msvc-dev-cmd-action@v1
+        uses: KDABLabs/msvc-dev-cmd-action@v2
         with:
           arch: amd64_arm64
 
