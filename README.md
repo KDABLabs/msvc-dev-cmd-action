@@ -63,6 +63,7 @@ jobs:
     - `x64` (default) or its synonyms: `amd64`, `win64`, `x86_64`, `x86-64`
     - `x86` or its synonyms: `win32`
   - cross-compilation: `x86_amd64`, `x86_arm`, `x86_arm64`, `amd64_x86`, `amd64_arm`, `amd64_arm64`
+    - `x86_arm` and `amd64_arm` (32-bit ARM) are not supported by Visual Studio 2026 and later
 - `sdk` – Windows SDK to use
   - do not specify to use the default SDK
   - or specify full Windows 10 SDK number (e.g, `10.0.10240.0`)
